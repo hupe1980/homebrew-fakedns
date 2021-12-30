@@ -5,21 +5,21 @@
 class Fakedns < Formula
   desc "Tiny DNS proxy for Penetration Testers and Malware Analysts"
   homepage "https://github.com/hupe1980/fakedns"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.3/fakedns_Darwin_x86_64.tar.gz"
-      sha256 "032cdfad434a69dc91513e1273fc297d8594222b9a9cd4d0c2825c2bb8f7110b"
+      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.4/fakedns_Darwin_x86_64.tar.gz"
+      sha256 "75094c0dc3f4e4822a3bd4d2441c32df925d986eb1f7b48fb68bda75603855b3"
 
       def install
         bin.install "fakedns"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.3/fakedns_Darwin_arm64.tar.gz"
-      sha256 "3973e37f989467e35358ae39390e4393f32e16ba8ef5324d7196b22a0ca859fc"
+      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.4/fakedns_Darwin_arm64.tar.gz"
+      sha256 "d1a96f5c497a157a1acb66661abd57190312cc3d7d80185fe3daf903d0f72fc3"
 
       def install
         bin.install "fakedns"
@@ -29,24 +29,24 @@ class Fakedns < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.3/fakedns_Linux_x86_64.tar.gz"
-      sha256 "525348fe3f56f1100e2f4a5f16b6922041151b1795c799cbf16e13fd5b8a1b11"
+      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.4/fakedns_Linux_x86_64.tar.gz"
+      sha256 "d26df509a030bdfda897bcb0fe7a0d75b13380b7ab3ad632f5f1a667acdb8002"
 
       def install
         bin.install "fakedns"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.3/fakedns_Linux_armv6.tar.gz"
-      sha256 "01b49447a03535ab2465bbff2835caf6235f995814f6bd3d91e58859ec0bb965"
+      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.4/fakedns_Linux_armv6.tar.gz"
+      sha256 "16fe25fe161779a0b5af71d6d4a2fa33206c2bfd856cf8b19f1924bcf7e6e8a8"
 
       def install
         bin.install "fakedns"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.3/fakedns_Linux_arm64.tar.gz"
-      sha256 "e389b81b5dd4d889187c7c7d95bcf14423e31d83fc724275237da26f0ddf82b7"
+      url "https://github.com/hupe1980/fakedns/releases/download/v0.0.4/fakedns_Linux_arm64.tar.gz"
+      sha256 "2372167d09ab40aae39aaa129d2e36e0d94377e21664bed1af15554eb512972a"
 
       def install
         bin.install "fakedns"
